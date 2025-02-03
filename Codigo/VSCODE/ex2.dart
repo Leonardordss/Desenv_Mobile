@@ -20,6 +20,4 @@ String idade = stdin.readLineSync()!;
 
 print("Seu nome é $nome e a sua idade é $idade");
 
-// 
-
 }
