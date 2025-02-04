@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      //remove a faixa debug no canto superior do aplicativo
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -68,6 +71,34 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _resetCounter(){
+    // a funcao set state gerencia o estado do aplicativo gerenciando as variaveis
+
+    setState(() {
+      
+      _counter=0; // zera a variavel counter
+
+
+    });
+
+
+  }
+
+  void _decrementCounter(){
+
+setState(() {
+  
+if(_counter>0){
+  _counter--;
+}
+else{
+  _counter =0;
+}
+
+});
+
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -105,21 +136,27 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+
+            //Propriedade chamada Style e esse style tem o Text Style
             const Text(
-              'You have pushed the button this many times:',
+              'Contador', style: TextStyle(fontSize: 22),
             ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(onPressed: _resetCounter, child: Text("Reset")),
+                ElevatedButton(onPressed: _incrementCounter, child: Icon(Icons.add)),
+                ElevatedButton(onPressed: _decrementCounter, child: Icon(Icons.reset_tv))
+              ],
+            ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
