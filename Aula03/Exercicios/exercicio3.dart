@@ -10,11 +10,11 @@ void main(){
 
   salario_bruto = double.parse(stdin.readLineSync()!);
 
-  desconto = (salario_bruto - (salario_bruto*0.10));
-  print("O salario bruto com desconto de 10% é: $desconto");
+  desconto = (salario_bruto*0.10);
+  print("Desconto de 10% sobre o salario é: $desconto");
 
-  bonificacao = (salario_bruto + (salario_bruto*0.20));
-  print("O salario bruto com bonificacao de 20% é: $bonificacao");
+  bonificacao = (salario_bruto*0.20);
+  print("Bonificacao de 20% sobre o salario é: $bonificacao");
 
   salario_liquido = (salario_bruto - desconto + bonificacao);
   print("O salario liquido a receber é: $salario_liquido");
