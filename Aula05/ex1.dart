@@ -1,11 +1,26 @@
-//estrutura de repetição
+/*
+Exemplo 1 - Programaçao orientada a objeto
+24.02.2025
+*/
 
-import 'dart:io';
+
+// Cria classe chamada Casa
+class Casa{
+  String? cor; // ? faz parte do null safety do dart
+  int? qtde_p;
+
+  // Cria o metodo chamado abrirporta()
+  void abrirporta(){
+    print("A porta esta aberta");
+  }
+}
 
 void main(){
-  int cont = 0;
-  while(cont<10){
-      print(cont);
-      cont++;
-  }
+  // instancia o objeto chamado minhaCasa
+  Casa  minhaCasa = Casa();
+  minhaCasa.cor="Azul";
+  minhaCasa.qtde_p=2;
+  minhaCasa.abrirporta();
+  print("Cor da casa ${minhaCasa.cor}");
+  print("Quantidade de portas: ${minhaCasa.qtde_p}");
 }
