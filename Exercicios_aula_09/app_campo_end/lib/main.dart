@@ -84,7 +84,7 @@ class _CampotextoState extends State<Campotexto> {
           keyboardType: TextInputType.name,
           //inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           decoration: InputDecoration(
-              labelText: "Digite seu Endereço",
+              labelText: "Digite o Endereço",
               border: OutlineInputBorder(
                 borderRadius: // BorderRadius.circular(8)
                     BorderRadius.circular(8),
@@ -95,7 +95,7 @@ class _CampotextoState extends State<Campotexto> {
           keyboardType: TextInputType.number,
           inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           decoration: InputDecoration(
-              labelText: "Digite o Nº do seu endereço",
+              labelText: "Digite o Nº do endereço",
               // border parametro que permite estilizar o widget textfield
               border: OutlineInputBorder(
                 borderRadius: // BorderRadius.circular(8)
@@ -107,7 +107,7 @@ class _CampotextoState extends State<Campotexto> {
           keyboardType: TextInputType.name,
           //inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           decoration: InputDecoration(
-              labelText: "Digite sua Cidade / Estado",
+              labelText: "Digite a Cidade / Estado",
               border: OutlineInputBorder(
                 borderRadius: // BorderRadius.circular(8)
                     BorderRadius.circular(8),
