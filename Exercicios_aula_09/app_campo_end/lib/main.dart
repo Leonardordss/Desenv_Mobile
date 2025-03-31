@@ -37,14 +37,14 @@ class _CampotextoState extends State<Campotexto> {
   // declara variavel do tipo TextEdittingController
   TextEditingController email = TextEditingController();
   TextEditingController nome = TextEditingController();
-  TextEditingController idade = TextEditingController();
+  TextEditingController numero = TextEditingController();
   TextEditingController endereco = TextEditingController();
   TextEditingController cidade = TextEditingController();
   _limpar() {
     setState(() {
       email.text = "";
       nome.text = "";
-      idade.text = "";
+      numero.text = "";
       endereco.text = "";
       cidade.text = "";
     });
@@ -79,18 +79,7 @@ class _CampotextoState extends State<Campotexto> {
           ),
         ),
 
-        TextField(
-          keyboardType: TextInputType.number,
-          inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-          decoration: InputDecoration(
-              labelText: "Digite sua idade",
-              // border parametro que permite estilizar o widget textfield
-              border: OutlineInputBorder(
-                borderRadius: // BorderRadius.circular(8)
-                    BorderRadius.circular(8),
-              )),
-          controller: idade,
-        ),
+      
         TextField(
           keyboardType: TextInputType.name,
           //inputFormatters: [FilteringTextInputFormatter.digitsOnly],
@@ -102,11 +91,23 @@ class _CampotextoState extends State<Campotexto> {
               )),
           controller: endereco,
         ),
+          TextField(
+          keyboardType: TextInputType.number,
+          inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+          decoration: InputDecoration(
+              labelText: "Digite o Nº do seu endereço",
+              // border parametro que permite estilizar o widget textfield
+              border: OutlineInputBorder(
+                borderRadius: // BorderRadius.circular(8)
+                    BorderRadius.circular(8),
+              )),
+          controller: numero,
+        ),
         TextField(
           keyboardType: TextInputType.name,
           //inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           decoration: InputDecoration(
-              labelText: "Digite sua Cidade e Estado",
+              labelText: "Digite sua Cidade / Estado",
               border: OutlineInputBorder(
                 borderRadius: // BorderRadius.circular(8)
                     BorderRadius.circular(8),
@@ -127,7 +128,7 @@ class _CampotextoState extends State<Campotexto> {
                 setState(() {
                   email.text;
                   nome.text;
-                  idade.text;
+                  numero.text;
                   endereco.text;
                   cidade.text;
                 });
@@ -152,7 +153,7 @@ class _CampotextoState extends State<Campotexto> {
           height: 50,
           color: Colors.green,
           child: Text(
-            "${nome.text} - ${idade.text} - ${endereco.text} - ${cidade.text}",
+            "${nome.text} - ${endereco.text} - ${numero.text} - ${cidade.text}",
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 18),
           ),
