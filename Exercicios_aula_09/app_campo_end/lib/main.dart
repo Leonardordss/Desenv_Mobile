@@ -17,7 +17,7 @@ class Telaprincipal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("App Exercicio aula 09 - Campo Endereço"),
+        title: Text("App EX aula 09 - Campo Endereço"),
         backgroundColor: Colors.green,
       ),
       body: Campotexto(),
