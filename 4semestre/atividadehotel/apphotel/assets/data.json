@@ -1,0 +1,161 @@
+{
+    "hoteis": [
+        {
+            "id": "b2d171d3-a225-4ee9-8f23-058ed691ef7c",
+            "imagePath": "hoteis/brasil.png",
+            "name": "Brasil",
+            "description": "Paraiso",
+            "stars": 4.3,
+            "distance": 2,
+            "categories": [
+                "Nacional"
+                
+            ],
+            "dishes": [
+                {
+                    "id": "772c4982-5f51-49c2-b287-3a27d08f93d0",
+                    "imagePath": "dishes/angra.png",
+                    "name": "Angra dos Reis",
+                    "description": "Paraiso no litoral Carioca.",
+                    "price": 384
+                },
+                {
+                    "id": "772c4982-5f51-49c2-b287-3a27d08f93d0",
+                    "imagePath": "dishes/jericoacora.png",
+                    "name": "Jericoacoara",
+                    "description": "Paraiso no litoral Carioca.",
+                    "price": 571
+                },
+                {
+                    "id": "772c4982-5f51-49c2-b287-3a27d08f93d0",
+                    "imagePath": "dishes/arraial.png",
+                    "name": "Arraial do Cabo",
+                    "description": "Paraiso no litoral Carioca.",
+                    "price": 534
+                },
+                {
+                    "id": "772c4982-5f51-49c2-b287-3a27d08f93d0",
+                    "imagePath": "dishes/floripa.png",
+                    "name": "Florianopolis",
+                    "description": "Paraiso no litoral Carioca.",
+                    "price": 348
+                }
+            ]
+        },
+        {
+            "id": "eba2d597-a35d-4a84-bcb1-75881330c488",
+            "imagePath": "hoteis/espanha.png",
+            "name": "Espanha",
+            "description": "Autêntica comida mexicana, cheia de sabor e tradição.",
+            "stars": 4.7,
+            "distance": 3,
+            "categories": [
+                "Internacional"
+                
+            ],
+            "dishes": [
+                {
+                    "id": "da27e8c7-faf9-468f-84e0-82961d4e365f",
+                    "imagePath": "dishes/madrid.png",
+                    "name": "Madri",
+                    "description": "O Guacamole Supremo é a escolha perfeita para um momento descontraído. Pequeno no tamanho, mas gigante no sabor, essa delícia é preparada com ingredientes frescos e um toque especial que faz toda a diferença. Perfeito para petiscar entre amigos ou como uma entrada que desperta o apetite.",
+                    "price": 401
+                }
+            ]
+        },
+        {
+            "id": "eba2d597-a35d-4a84-bcb1-75881330c488",
+            "imagePath": "hoteis/chile.png",
+            "name": "Chile",
+            "description": "Autêntica comida mexicana, cheia de sabor e tradição.",
+            "stars": 4.7,
+            "distance": 3,
+            "categories": [
+                "Internacional"
+                
+            ],
+            "dishes": [
+                {
+                    "id": "da27e8c7-faf9-468f-84e0-82961d4e365f",
+                    "imagePath": "dishes/santiago.png",
+                    "name": "Santiago",
+                    "description": "O Guacamole Supremo é a escolha perfeita para um momento descontraído. Pequeno no tamanho, mas gigante no sabor, essa delícia é preparada com ingredientes frescos e um toque especial que faz toda a diferença. Perfeito para petiscar entre amigos ou como uma entrada que desperta o apetite.",
+                    "price": 446
+                }
+            ]
+        },
+        {
+            "id": "ddd8936a-6324-4071-a3f0-228e5971648f",
+            "imagePath": "hoteis/frança.png",
+            "name": "França",
+            "description": "Alimentação saudável e saborosa.",
+            "stars": 5.0,
+            "distance": 1,
+            "categories": [
+                "Internacional"
+                
+            ],
+            "dishes": [
+                {
+                    "id": "e551a0b1-0032-4f28-a17c-fd3cdaf7089f",
+                    "imagePath": "dishes/paris.png",
+                    "name": "Paris",
+                    "description": "O Salada Verde é um prato pensado para satisfazer os paladares mais exigentes. Com uma combinação equilibrada de ingredientes selecionados e um tempero especial, cada garfada traz uma explosão de sabores que tornam essa refeição inesquecível. Ideal para quem busca um prato completo e delicioso.",
+                    "price": 546
+                }
+                
+            ]
+        },
+        {
+            "id": "702e5a20-938c-4aba-91e1-73103aec471e",
+            "imagePath": "hoteis/usa.png",
+            "name": "Estados Unidos",
+            "description": "Os melhores donuts da cidade!",
+            "stars": 4.8,
+            "distance": 4,
+            "categories": [
+                "Internacional"
+            
+            ],
+            "dishes": [
+                {
+                    "id": "36fbff31-a8d7-41fb-a6d0-78936f65f7f2",
+                    "imagePath": "dishes/orlando.png",
+                    "name": "Orlando",
+                    "description": "O Donut Tradicional é a maneira perfeita de encerrar sua refeição com chave de ouro. Sua textura suave e seu sabor equilibrado garantem um momento de prazer único. Com um toque de doçura na medida certa, essa sobremesa é um verdadeiro deleite para os amantes de doces.",
+                    "price": 616
+                },
+                {
+                    "id": "5fcdfe7a-1c7b-4323-82bf-9c23da601e12",
+                    "imagePath": "dishes/lasvegas.png",
+                    "name": "Las Vegas",
+                    "description": "O Donut Recheado é a maneira perfeita de encerrar sua refeição com chave de ouro. Sua textura suave e seu sabor equilibrado garantem um momento de prazer único. Com um toque de doçura na medida certa, essa sobremesa é um verdadeiro deleite para os amantes de doces.",
+                    "price": 504
+                }
+                
+            ]
+        },
+        {
+            "id": "3be1dbe4-39d2-4388-a325-5c23eec85822",
+            "imagePath": "hoteis/italia.png",
+            "name": "Italia",
+            "description": "Sushis e pratos orientais fresquinhos.",
+            "stars": 4.9,
+            "distance": 1,
+            "categories": [
+                "Internacional"
+                
+            ],
+            "dishes": [
+                {
+                    "id": "9fd81228-a092-4ea1-b734-27171ca0272a",
+                    "imagePath": "dishes/roma.png",
+                    "name": "Roma",
+                    "description": "O Combo Sushi é um prato pensado para satisfazer os paladares mais exigentes. Com uma combinação equilibrada de ingredientes selecionados e um tempero especial, cada garfada traz uma explosão de sabores que tornam essa refeição inesquecível. Ideal para quem busca um prato completo e delicioso.",
+                    "price": 478
+                }
+                
+            ]
+        }
+    ]
+}
