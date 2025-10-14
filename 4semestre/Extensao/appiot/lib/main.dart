@@ -23,81 +23,110 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // Logo SENAI
-            Image.asset(
-  'assets/images/logo.jpg',
-  width: 150,
-),
-
-            const SizedBox(height: 20),
-
-            // Botão "Roberto Mange"
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF001F5B),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25),
-                ),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 40, vertical: 12),
-              ),
-              onPressed: () {},
-              child: const Text(
-                '“Roberto Mange”',
-                style: TextStyle(fontSize: 18, color: Colors.white),
+      body: Column(
+        children: [
+          SizedBox(height: screenHeight * 0.05), // Espaço do topo ajustado
+          Align(
+            alignment: Alignment.topCenter,
+            child: Text(
+              'Leonardo e William',
+              style: TextStyle(
+                fontSize: screenWidth * 0.055, // Tamanho da fonte responsivo
+                fontWeight: FontWeight.bold,
+                color: const Color(0xFF001F5B),
               ),
             ),
-            const SizedBox(height: 20),
-
-            // Botão de Play
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF001F5B),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
+          ),
+          Expanded(
+            child: Center(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.symmetric(
+                  horizontal: screenWidth * 0.08,
+                  vertical: screenHeight * 0.03,
                 ),
-                padding: const EdgeInsets.all(24),
-              ),
-              onPressed: () {// Navegar para a segunda tela
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const Tela2()),
-    );
-  },
-  child: const Icon(
-    Icons.play_circle_outline,
-    size: 50,
-    color: Colors.white,
-              
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: screenHeight * 0.03), // Espaço antes do logo
+
+                    // Logo SENAI
+                    Image.asset(
+                      'assets/images/logo.jpg',
+                      width: screenWidth * 0.4, // Largura do logo responsiva
+                    ),
+
+                    SizedBox(height: screenHeight * 0.04), // Espaço após o logo
+
+                    // Botão "Roberto Mange"
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF001F5B),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: screenWidth * 0.1, vertical: screenHeight * 0.02),
+                      ),
+                      onPressed: () {},
+                      child: Text(
+                        '"Roberto Mange"',
+                        style: TextStyle(fontSize: screenWidth * 0.045, color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(height: screenHeight * 0.04), // Espaço após o botão "Roberto Mange"
+
+                    // Botão de Play
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF001F5B),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        padding: EdgeInsets.all(screenWidth * 0.06), // Padding responsivo
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const Tela2()),
+                        );
+                      },
+                      child: Icon(
+                        Icons.play_circle_outline,
+                        size: screenWidth * 0.12, // Tamanho do ícone responsivo
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(height: screenHeight * 0.04), // Espaço após o botão de Play
+
+                    // Botão "Controle de Dispositivos"
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF001F5B),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: screenWidth * 0.08, vertical: screenHeight * 0.02),
+                      ),
+                      onPressed: () {},
+                      child: Text(
+                        'Controle de Dispositivos',
+                        style: TextStyle(fontSize: screenWidth * 0.045, color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-            const SizedBox(height: 20),
-
-            // Botão "Controle de Dispositivos"
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF001F5B),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25),
-                ),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-              ),
-              onPressed: () {},
-              child: const Text(
-                'Controle de Dispositivos',
-                style: TextStyle(fontSize: 18, color: Colors.white),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
 }
+
