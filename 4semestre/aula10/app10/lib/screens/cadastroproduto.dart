@@ -1,4 +1,5 @@
 import 'package:app10/screens/prod_screen.dart';
+import 'package:app10/screens/prodscreen2.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -18,7 +19,7 @@ class _CadastroprodutoState extends State<Cadastroproduto> {
   // Cria a função para cadastrar o produto
 
   _cadastrarproduto() async {
-    String url = "http://10.109.83.12:8000/api/produtos/";
+    String url = "http://10.109.83.12:8081/api/produtos/";
     // Cria a estrutura da mensagem para cadastro dos produtos
     Map<String, dynamic> prod = {
       "nome": nomeprod.text,
@@ -97,10 +98,9 @@ class _CadastroprodutoState extends State<Cadastroproduto> {
           ),
           ElevatedButton(
               onPressed: _cadastrarproduto, child: Text('Cadastrar')),
-          ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Produto_screen()));
+          ElevatedButton(onPressed: () {
+                Navigator.push(context,MaterialPageRoute(
+                  builder: (context) => Prodscreen2()));
               },
               child: Text('Produtos screen'))
         ],

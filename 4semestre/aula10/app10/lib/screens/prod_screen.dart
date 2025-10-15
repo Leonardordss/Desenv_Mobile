@@ -20,7 +20,7 @@ class _Produto_screenState extends State<Produto_screen> {
   List dado = [];
   Future<void> leituradados()async{
     //String url = "http://10.109.83.10:8000/api/produtos/";
-    String url = "http://10.109.83.12:8000/api/produtos/";
+    String url = "http://10.109.83.12:8081/api/produtos/";
     http.Response resposta = await http.get(Uri.parse(url));
 
     if(resposta.statusCode==200){
