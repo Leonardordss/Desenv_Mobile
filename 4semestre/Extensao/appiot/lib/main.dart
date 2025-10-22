@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'tela2.dart';
+import 'package:appiot/telaapp.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -92,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const Tela2()),
+                          MaterialPageRoute(builder: (context) => const Telaapp()),
                         );
                       },
                       child: Icon(

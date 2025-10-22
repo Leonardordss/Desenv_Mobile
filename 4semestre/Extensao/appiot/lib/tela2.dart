@@ -74,7 +74,7 @@ class Tela2 extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: screenHeight * 0.025),
-                    _buildButton('C', Colors.green, screenWidth, screenHeight),
+                    _buildButton('C', Color(0xFF001F5B), screenWidth, screenHeight),
                     SizedBox(height: screenHeight * 0.025),
                     _buildButtonWithIcon(
                       'Buzzer',
@@ -87,7 +87,7 @@ class Tela2 extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                          child: _buildButton('Liga', Colors.green, screenWidth, screenHeight),
+                          child: _buildButton('Liga', Color(0xFF001F5B), screenWidth, screenHeight),
                         ),
                         SizedBox(width: screenWidth * 0.04),
                         Expanded(
